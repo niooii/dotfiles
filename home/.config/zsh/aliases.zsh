@@ -2,19 +2,28 @@
 ## Aliases
 ##
 
+# MY OWN SHIT
+alias cd=z
+alias hsr='flatpak run moe.launcher.the-honkers-railway-launcher'
+alias pcman='pcmanfm-qt'
+alias ff='firefox-developer-edition'
+alias qemu64='qemu-system-x86_64'
+alias ytmp4='yt-dlp'
+alias ytmp3='yt-dlp -x --audio-format wav --audio-quality 0'
+alias removeunused='sudo pacman -Qtdq | sudo pacman -Rns -'
 #alias unreal='SDL_VIDEO_X11_NET_WM_BYPASS_COMPOSITOR="0" UnrealEditor'
 alias emsdk-env='source ~/emsdk/emsdk_env.sh'
+
+# others i def did not steal
 alias py='python'
 alias cpuinfo='watch grep \"cpu MHz\" /proc/cpuinfo'
 alias run='pnpm run'
 alias c="clear"
-alias q="exit"
 alias cleanram="sudo sh -c 'sync; echo 3 > /proc/sys/vm/drop_caches'"
 alias trim_all="sudo fstrim -va"
 alias mkgrub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
 alias mtar='tar -zcvf' # mtar <archive_compress>
 alias utar='tar -zxvf' # utar <archive_decompress> <file_list>
-alias z='zip -r' # z <archive_compress> <file_list>
 alias sr='source ~/.config/zsh/env.zsh'
 alias ..="cd .."
 alias psg="ps aux | grep -v grep | grep -i -e VSZ -e" 
@@ -36,7 +45,6 @@ alias l="ls -l"
 alias la="ls -a"
 alias lla="ls -la"
 alias lt="ls --tree"
-alias cat="bat --color always --plain"
 alias grep='grep --color=auto'
 alias mv='mv -v'
 alias cp='cp -vr'
@@ -220,11 +228,5 @@ alias gupav='git pull --rebase --autostash -v'
 alias gupv='git pull --rebase -v'
 alias gwch='git whatchanged -p --abbrev-commit --pretty=medium'
 alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commit --no-verify --no-gpg-sign -m "--wip-- [skip ci]"'
-# MY OWN SHIT
-alias pcman='pcmanfm-qt'
-alias qemu64='qemu-system-x86_64'
-alias ytmp4='yt-dlp'
-alias ytmp3='yt-dlp -x --audio-format wav --audio-quality 0'
-alias removeunused='sudo pacman -Qtdq | sudo pacman -Rns -'
 
 # vim:ft=zsh

@@ -2,12 +2,15 @@
 ## PATH & ENV Var
 ##
 
-export RUST_BACKTRACE="1"
-
-export VULKAN_SDK=~/VulkanSDK/1.3.268.0/x86_64
+source ~/vulkan-sdk/setup-env.sh
+export SSL_CERT_FILE=/opt/miniconda3/ssl/cert.pem
+export RUST_BACKTRAdCE="1"
+export CRYPTOGRAPHY_OPENSSL_NO_LEGACY=1
 export PATH="$VULKAN_SDK/bin:$PATH"
 export LD_LIBRARY_PATH="$VULKAN_SDK/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
 export VK_LAYER_PATH="$VULKAN_SDK/etc/vulkan/explicit_layer.d"
+export WIN_CDRIVE="/dev/nvme0n1p5"
+export WIN_EDRIVE="/dev/nvme2n1p2"
 
 # No weird bugs in some graphical applications
 export SDL_VIDEO_X11_NET_WM_BYPASS_COMPOSITOR="0"
@@ -23,6 +26,8 @@ export PATH="$HOME/.scripts:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.cabal/bin:$HOME/.ghcup/bin:$PATH"
+export PATH="$HOME/.local/share/JetBrains/Toolbox/scripts:$PATH"
+export PATH="/opt/miniconda3/bin:$PATH"
 export GPG_TTY="${TTY:-$(tty)}"
 
 export SUDO_PROMPT="passwd: "
