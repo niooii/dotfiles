@@ -1,0 +1,3 @@
+[submodule "caelestia"]
+	path = caelestia
+	url = https://github.com/niooii/caelestia

@@ -4,9 +4,9 @@
 
 # MY OWN SHIT
 alias cd=z
-alias hsr='flatpak run moe.launcher.the-honkers-railway-launcher'
+alias zzz='env -u WAYLAND_DISPLAY sleepy-launcher'
 alias pcman='pcmanfm-qt'
-alias ff='firefox-developer-edition'
+alias ff='floorp'
 alias qemu64='qemu-system-x86_64'
 alias ytmp4='yt-dlp'
 alias ytmp3='yt-dlp -x --audio-format wav --audio-quality 0'

@@ -2,8 +2,9 @@
 ## PATH & ENV Var
 ##
 
-source ~/vulkan-sdk/setup-env.sh
-export SSL_CERT_FILE=/opt/miniconda3/ssl/cert.pem
+# source ~/vulkan-sdk/setup-env.sh
+export VK_LAYER_PATH="/usr/share/vulkan/explicit_layer.d:/etc/vulkan/explicit_layer.d"
+# export SSL_CERT_FILE=/opt/miniconda3/ssl/cert.pem
 export RUST_BACKTRAdCE="1"
 export CRYPTOGRAPHY_OPENSSL_NO_LEGACY=1
 export PATH="$VULKAN_SDK/bin:$PATH"
