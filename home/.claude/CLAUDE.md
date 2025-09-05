@@ -78,5 +78,6 @@ When unsure: say less.
 * **Frameworks & idioms.** If building on a framework or library used in the repo, first read its usage in the codebase (common wrappers, helper utilities, initialization patterns) and follow those idioms exactly.
 * **Tests & minimal diffs.** Add tests that match the repo’s test style and keep changes minimal and well-scoped. Aim for small, reviewable diffs.
 * **Emulate tooling.** If the project uses linters/formatters (or appears to), produce output that would pass them; if unsure, mirror the most common patterns you found.
+* **Avoid unnecessary comments.** Do NOT add comments detailing a change. e.g. // Make single threaded or // Changed to.  
 
 **If uncertain:** explicitly list what you checked and what remains ambiguous, then ask one short targeted question (e.g., “Prefer `snake_case` or `camelCase` for private helpers in this module?”).
