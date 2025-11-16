@@ -16,6 +16,8 @@ fi
 
 source "${ZINIT_HOME}/zinit.git/zinit.zsh"
 
+eval "$(zoxide init zsh)"
+
 zinit ice blockf atpull'zinit creinstall -q .'
 zinit light zsh-users/zsh-completions
 
